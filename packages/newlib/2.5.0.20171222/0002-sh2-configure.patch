@@ -1,0 +1,19 @@
+*** a/newlib/configure.host	2019-01-11 17:06:11.598378329 +0000
+--- b/newlib/configure.host	2019-01-11 17:06:47.717378329 +0000
+*************** case "${host_cpu}" in
+*** 271,277 ****
+  	default_newlib_io_long_long="yes"
+  	newlib_cflags="${newlib_cflags} -ffunction-sections -fdata-sections "
+  	;;
+!   sh | sh64)
+  	machine_dir=sh
+  	;;
+    sparc*)
+--- 271,277 ----
+  	default_newlib_io_long_long="yes"
+  	newlib_cflags="${newlib_cflags} -ffunction-sections -fdata-sections "
+  	;;
+!   sh|sh2*|sh64)
+  	machine_dir=sh
+  	;;
+    sparc*)
